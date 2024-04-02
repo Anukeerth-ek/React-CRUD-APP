@@ -8,6 +8,7 @@ import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutline
 import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
 import { DarkModeContext } from "../../context/darkModeContext";
 import { useContext } from "react";
+import avatar from '../../assets/icon.png'
 
 const Navbar = () => {
   const { dispatch } = useContext(DarkModeContext);
@@ -16,8 +17,8 @@ const Navbar = () => {
     <div className="navbar">
       <div className="wrapper">
         <div className="search">
-          <input type="text" placeholder="Search..." />
           <SearchOutlinedIcon />
+          <input type="text" placeholder="Search..." />
         </div>
         <div className="items">
           <div className="item">
@@ -46,7 +47,7 @@ const Navbar = () => {
           </div>
           <div className="item">
             <img
-              src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+              src={avatar}
               alt=""
               className="avatar"
             />
